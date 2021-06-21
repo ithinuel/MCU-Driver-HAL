@@ -81,11 +81,11 @@ Bootloader-ready declaration of flash VTOR address:
 
 ## Start application
 
-The `mbed_start_application` implementation exists only for Cortex-M3, Cortex-M4 and Cortex-M7. You can find it in [the Arm Mbed_application code file](https://github.com/ARMmbed/MCU-Driver-HAL/blob/main/bootstrap/mbed_application.c). If `mbed_start_application` does not support your target, you must implement this function in the target HAL.
+The `mbed_start_application` implementation exists only for Cortex-M3, Cortex-M4 and Cortex-M7. You can find it in [the Arm Mbed_application code file](https://github.com/mcu-driver-hal/MCU-Driver-HAL/blob/main/bootstrap/mbed_application.c). If `mbed_start_application` does not support your target, you must implement this function in the target HAL.
 
 ## Flash HAL
 
-For a bootloader to perform updates, you must implement the flash API. This consists of implementing the function in [flash_api.h](https://github.com/ARMmbed/MCU-Driver-HAL/blob/main/hal/include/hal/flash_api.h).
+For a bootloader to perform updates, you must implement the flash API. This consists of implementing the function in [flash_api.h](https://github.com/mcu-driver-hal/MCU-Driver-HAL/blob/main/hal/include/hal/flash_api.h).
 
 ### Implement your own HAL driver
 
